@@ -1,0 +1,30 @@
+strict graph {
+	node [shape=circle];
+	11;
+	7;
+	11--7 [color=red, side=left]
+	13;
+	11--13 [side=right]
+	5;
+	7--5 [side=left]
+	9;
+	7--9 [side=right]
+	12;
+	13--12 [side=left]
+	14;
+	13--14 [side=right]
+	3;
+	5--3 [color=red, side=left]
+	6;
+	5--6 [side=right]
+	8;
+	9--8 [side=left]
+	10;
+	9--10 [side=right]
+	2;
+	3--2 [side=left]
+	4;
+	3--4 [side=right]
+	1;
+	2--1 [color=red, side=left]
+}

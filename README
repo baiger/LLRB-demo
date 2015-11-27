@@ -1,0 +1,32 @@
+This demo program inserts into a left-leaning red-black tree, and prints a description of the tree. By default the tree is printed in Graphviz dot language, and you can use Graphviz tools to visualize the tree; if you comment out "#define GRAPHVIZ" in llrb.h, then it prints a level-order traversal.
+
+----------
+To compile
+----------
+g++ -o llrb-test llrb-test.cpp
+
+
+------------------------------------
+To generate nice trees with Graphviz
+------------------------------------
+dot test.out | gvpr -c -ftree.g | neato -n -Tpng -o tree.png
+
+
+--------
+Commands
+--------
+insert i		Insert a key i (integer) into the tree
+print  			Print the tree
+exit			Terminate the program (you must include this command as the last one of your input file, if you use one)
+
+
+-----
+Files
+-----
+- llrb.h		Class for a left-leaning red-black tree
+- llrb-test.cpp		A simple shell that receive insert and print commands
+- test.in		Sample input file
+- test.out		Sample output file
+- Makefile		A makefile that compiles and runs the program and prints the tree
+- tree.g		GVPR script for the printing of binary tree
+- tree.png		The tree corresponding to sample input and output
